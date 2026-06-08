@@ -1,0 +1,301 @@
+```css
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:#050914;
+  color:white;
+  overflow-x:hidden;
+}
+
+section{
+  padding:100px 60px;
+}
+
+header{
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:1000;
+  background:rgba(5,9,20,0.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:22px 60px;
+}
+
+.logo{
+  font-size:30px;
+  font-weight:bold;
+  color:#4dffdc;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:28px;
+}
+
+.nav-links a{
+  color:#b0b0b0;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#4dffdc;
+}
+
+#connectBtn{
+  background:#4dffdc;
+  color:#050914;
+  border:none;
+  padding:14px 26px;
+  border-radius:12px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+#connectBtn:hover{
+  transform:translateY(-2px);
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  text-align:center;
+}
+
+.hero-overlay{
+  position:absolute;
+  width:600px;
+  height:600px;
+  background:#4dffdc22;
+  filter:blur(120px);
+  border-radius:50%;
+}
+
+.hero-content{
+  position:relative;
+  max-width:950px;
+  z-index:2;
+}
+
+.hero-badge{
+  display:inline-block;
+  padding:10px 24px;
+  border-radius:50px;
+  border:1px solid rgba(77,255,220,0.2);
+  color:#4dffdc;
+  margin-bottom:30px;
+}
+
+.hero h1{
+  font-size:82px;
+  line-height:1.1;
+  margin-bottom:30px;
+}
+
+.hero span{
+  color:#4dffdc;
+}
+
+.hero p{
+  color:#b0b0b0;
+  font-size:20px;
+  line-height:1.8;
+}
+
+.hero-buttons{
+  margin-top:40px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+  padding:16px 34px;
+  border-radius:12px;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.primary-btn{
+  background:#4dffdc;
+  border:none;
+  color:#050914;
+}
+
+.secondary-btn{
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.1);
+  color:white;
+}
+
+.wallet-box{
+  margin-top:35px;
+}
+
+#walletAddress{
+  display:inline-block;
+  padding:14px 24px;
+  background:#101828;
+  border-radius:12px;
+}
+
+.statistics,
+.about-grid,
+.features-grid,
+.ecosystem-grid,
+.token-grid,
+.roadmap-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.stat-card,
+.about-card,
+.feature-card,
+.eco-card,
+.token-card,
+.roadmap-card,
+.faq-item{
+  background:#101828;
+  padding:35px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,0.05);
+  transition:0.3s;
+}
+
+.stat-card:hover,
+.about-card:hover,
+.feature-card:hover,
+.eco-card:hover,
+.token-card:hover,
+.roadmap-card:hover,
+.faq-item:hover{
+  transform:translateY(-5px);
+  border-color:#4dffdc;
+}
+
+.stat-card h2{
+  color:#4dffdc;
+  font-size:44px;
+  margin-bottom:10px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.section-title h2{
+  font-size:54px;
+  margin-bottom:20px;
+}
+
+.section-title p{
+  color:#b0b0b0;
+  max-width:700px;
+  margin:auto;
+  line-height:1.8;
+}
+
+.feature-icon{
+  font-size:38px;
+  margin-bottom:20px;
+}
+
+.feature-card h3,
+.about-card h3,
+.eco-card h3,
+.token-card h3,
+.roadmap-card h3{
+  margin-bottom:15px;
+  color:#4dffdc;
+}
+
+p{
+  line-height:1.8;
+  color:#b0b0b0;
+}
+
+.faq-container{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+footer{
+  border-top:1px solid rgba(255,255,255,0.05);
+  padding:40px 60px;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.footer-logo{
+  color:#4dffdc;
+  font-weight:bold;
+  font-size:22px;
+}
+
+.footer-links{
+  display:flex;
+  gap:20px;
+}
+
+.footer-links a{
+  color:#b0b0b0;
+  text-decoration:none;
+}
+
+.footer-links a:hover{
+  color:#4dffdc;
+}
+
+@media(max-width:900px){
+
+  .navbar{
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero h1{
+    font-size:52px;
+  }
+
+  .section-title h2{
+    font-size:40px;
+  }
+
+  section{
+    padding:80px 20px;
+  }
+
+}
+```
