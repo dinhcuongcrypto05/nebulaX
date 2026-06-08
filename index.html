@@ -1,0 +1,412 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NebulaX Protocol</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar">
+
+      <div class="logo">
+        NebulaX
+      </div>
+
+      <ul class="nav-links">
+
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#ecosystem">Ecosystem</a></li>
+        <li><a href="#token">Token</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#faq">FAQ</a></li>
+
+      </ul>
+
+      <button id="connectBtn">
+        Connect Wallet
+      </button>
+
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <div class="hero-badge">
+        NEXT GENERATION WEB3 FINANCIAL INFRASTRUCTURE
+      </div>
+
+      <h1>
+        Powering the Future of
+        <span>Decentralized Finance</span>
+      </h1>
+
+      <p>
+        NebulaX Protocol provides institutional-grade DeFi infrastructure,
+        multi-chain liquidity routing, decentralized staking architecture,
+        and scalable blockchain interoperability for global Web3 ecosystems.
+      </p>
+
+      <div class="hero-buttons">
+
+        <button class="primary-btn">
+          Launch App
+        </button>
+
+        <button class="secondary-btn">
+          Documentation
+        </button>
+
+      </div>
+
+      <div class="wallet-box">
+        <p id="walletAddress">
+          Wallet Not Connected
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- STATS -->
+
+  <section class="statistics">
+
+    <div class="stat-card">
+      <h2>$12.8B+</h2>
+      <p>Total Value Locked</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>2.4M+</h2>
+      <p>Active Wallets</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>120+</h2>
+      <p>Supported Networks</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>0.04s</h2>
+      <p>Finality Speed</p>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+
+    <div class="section-title">
+      <h2>Why NebulaX Protocol</h2>
+      <p>
+        Built for scalable DeFi infrastructure with enterprise-level performance.
+      </p>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-card">
+        <h3>Institutional Security</h3>
+        <p>
+          Multi-layer audited smart contracts and decentralized validator systems
+          ensure maximum protocol security and reliability.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3>Cross-Chain Liquidity</h3>
+        <p>
+          Unified liquidity routing across multiple blockchain ecosystems
+          with optimized transaction execution.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3>Scalable Infrastructure</h3>
+        <p>
+          High-performance decentralized architecture designed
+          for mass adoption and enterprise-grade Web3 applications.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FEATURES -->
+
+  <section class="features" id="features">
+
+    <div class="section-title">
+      <h2>Core Features</h2>
+      <p>
+        Advanced DeFi infrastructure designed for scalability and interoperability.
+      </p>
+    </div>
+
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Decentralized Security</h3>
+        <p>
+          Advanced blockchain security architecture with audited smart contracts.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Ultra-Fast Transactions</h3>
+        <p>
+          High-speed infrastructure optimized for DeFi execution and scalability.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🌐</div>
+        <h3>Cross-Chain Bridge</h3>
+        <p>
+          Secure interoperability between major blockchain ecosystems.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">💎</div>
+        <h3>Staking Rewards</h3>
+        <p>
+          Earn sustainable yield through decentralized validator participation.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🏛️</div>
+        <h3>DAO Governance</h3>
+        <p>
+          Community-driven governance framework powered by on-chain voting.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>AI Analytics</h3>
+        <p>
+          Real-time analytics and liquidity intelligence for DeFi ecosystems.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ECOSYSTEM -->
+
+  <section class="ecosystem" id="ecosystem">
+
+    <div class="section-title">
+      <h2>NebulaX Ecosystem</h2>
+      <p>
+        A complete decentralized infrastructure for modern blockchain finance.
+      </p>
+    </div>
+
+    <div class="ecosystem-grid">
+
+      <div class="eco-card">
+        <h3>NebulaX Bridge</h3>
+        <p>
+          Secure asset transfer across chains with low-latency settlement.
+        </p>
+      </div>
+
+      <div class="eco-card">
+        <h3>NebulaX Stake</h3>
+        <p>
+          Decentralized staking infrastructure with validator rewards.
+        </p>
+      </div>
+
+      <div class="eco-card">
+        <h3>NebulaX DAO</h3>
+        <p>
+          Governance platform enabling decentralized community decisions.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TOKEN -->
+
+  <section class="tokenomics" id="token">
+
+    <div class="section-title">
+      <h2>NebulaX Token Utility</h2>
+      <p>
+        Utility-driven ecosystem token powering the NebulaX infrastructure.
+      </p>
+    </div>
+
+    <div class="token-grid">
+
+      <div class="token-card">
+        <h3>Governance</h3>
+        <p>
+          Vote on ecosystem upgrades and protocol proposals.
+        </p>
+      </div>
+
+      <div class="token-card">
+        <h3>Staking</h3>
+        <p>
+          Stake tokens to secure the network and earn rewards.
+        </p>
+      </div>
+
+      <div class="token-card">
+        <h3>Liquidity</h3>
+        <p>
+          Provide liquidity across decentralized markets and bridges.
+        </p>
+      </div>
+
+      <div class="token-card">
+        <h3>Protocol Fees</h3>
+        <p>
+          Use NBLX for discounted protocol transaction fees.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ROADMAP -->
+
+  <section class="roadmap" id="roadmap">
+
+    <div class="section-title">
+      <h2>Roadmap</h2>
+      <p>
+        Building the future infrastructure of decentralized finance.
+      </p>
+    </div>
+
+    <div class="roadmap-grid">
+
+      <div class="roadmap-card">
+        <h3>Q4 2025</h3>
+        <p>
+          Mainnet deployment, validator onboarding, and staking launch.
+        </p>
+      </div>
+
+      <div class="roadmap-card">
+        <h3>Q1 2026</h3>
+        <p>
+          DAO governance release and institutional integrations.
+        </p>
+      </div>
+
+      <div class="roadmap-card">
+        <h3>Q2 2026</h3>
+        <p>
+          Multi-chain liquidity bridge and AI analytics dashboard.
+        </p>
+      </div>
+
+      <div class="roadmap-card">
+        <h3>2027+</h3>
+        <p>
+          Global DeFi infrastructure expansion and modular rollups.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FAQ -->
+
+  <section class="faq" id="faq">
+
+    <div class="section-title">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-container">
+
+      <div class="faq-item">
+        <h3>What is NebulaX Protocol?</h3>
+        <p>
+          NebulaX is a decentralized finance infrastructure protocol
+          focused on scalability, staking, interoperability, and liquidity.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How does staking work?</h3>
+        <p>
+          Users can delegate tokens to validators and receive staking rewards
+          while helping secure the network.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Is NebulaX cross-chain compatible?</h3>
+        <p>
+          Yes. NebulaX supports interoperability across multiple blockchain ecosystems.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-logo">
+      NebulaX Protocol
+    </div>
+
+    <div class="footer-links">
+      <a href="#">GitHub</a>
+      <a href="#">Discord</a>
+      <a href="#">Twitter</a>
+      <a href="#">Docs</a>
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+```
