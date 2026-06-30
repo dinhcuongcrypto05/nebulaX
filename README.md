@@ -276,16 +276,6 @@ Potential future upgrades include:
 
 ---
 
-# Deployment
-
-The project can be deployed using:
-
-* Vercel
-* Netlify
-* GitHub Pages
-
----
-
 # NebulaX Protocol
 
 Building the future infrastructure layer for decentralized finance and scalable Web3 ecosystems.
