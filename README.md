@@ -286,12 +286,6 @@ The project can be deployed using:
 
 ---
 
-# License
-
-MIT License
-
----
-
 # NebulaX Protocol
 
 Building the future infrastructure layer for decentralized finance and scalable Web3 ecosystems.
